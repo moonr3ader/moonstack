@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odd or Even Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafc;
+      margin: 0;
+      height: 100vh; /* full viewport height */
+      display: flex;
+      justify-content: center; /* horizontal center */
+      align-items: center;     /* vertical center */
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      max-width: 1000px;
+      width: 90%;
+    }
+
+    .card {
+      background: #fff;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #5c6ac4;
+    }
+
+    .input-section {
+      flex: 1;
+    }
+
+    .output-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="number"] {
+      padding: 6px;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      margin-right: 10px;
+      width: 120px;
+    }
+
+    button {
+      padding: 6px 12px;
+      border: none;
+      background: #5c6ac4;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #4952a3;
+    }
+
+    .output-box {
+      margin-top: 10px;
+      width: 100%;
+      height: 300px;
+      border: 2px solid #5c6ac4;
+      border-radius: 6px;
+      padding: 10px;
+      overflow-y: auto;
+      background: #fafafa;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+    }
+
+    .even {
+      color: #5c9ee0;
+      font-weight: bold;
+    }
+
+    .odd {
+      color: #d17ac2;
+      font-weight: bold;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #5c6ac4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function checkOddOrEven() {
+      var input = document.getElementById("num").value;
+      var result = "";
+
+      if (input === "") {
+        result = "<span style='color:red;'>Please enter a number</span>";
+      } else if (input % 2 === 0) {
+        result = input + ' is an <span class="even">even</span> number<br>';
+      } else {
+        result = input + ' is an <span class="odd">odd</span> number<br>';
+      }
+
+      document.getElementById("output-box").innerHTML = result;
+    }
+
+    function checkOddOrEven2() {
+      var input = document.getElementById("num2").value;
+      var result = "";
+
+      if (input === "") {
+        result = "<span style='color:red;'>Please enter a number</span>";
+      } else {
+        for (var i = 1; i <= input; i++) {
+          if (i % 2 === 0) {
+            result += i + ' is an <span class="even">even</span><br>';
+          } else {
+            result += i + ' is an <span class="odd">odd</span><br>';
+          }
+        }
+      }
+
+      document.getElementById("output-box").innerHTML = result;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <!-- Input Section -->
+    <div class="card input-section">
+      <h2>Odd or Even Checker</h2>
+      <label for="num">Input Number:</label>
+      <input type="number" id="num">
+      <button onclick="checkOddOrEven()">Check</button>
+
+      <h2 style="margin-top:30px;">List of Odd and Even from Input</h2>
+      <label for="num2">Input Number:</label>
+      <input type="number" id="num2">
+      <button onclick="checkOddOrEven2()">Check</button>
+
+      <a href="lesson1.html">Back to Lesson 1</a>
+    </div>
+
+    <!-- Output Section -->
+    <div class="card output-section">
+      <h2>Output</h2>
+      <div id="output-box" class="output-box"></div>
+    </div>
+  </div>
+</body>
+</html>

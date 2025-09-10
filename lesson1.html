@@ -16,32 +16,78 @@ Terminal Commands
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 1</title>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
-    <p>Currently learning HTML from GeeksForGeeks & CodeHelp Courses</p>
-    <h1>What we learned?</h1>
-    <ul>
-        <li>how git and VS code works</li>
-        <li>Installed 2 extensions (Live Server and Prettier) for VS Code</li>
-        <li>About HTML 
-            <ul>
-                <li>!DOCTYPE html</li>
-                <li>head - metadata/SEO/title</li>
-                <li>body - all elements that you want to show in the webpage</li>
-            </ul>
-        </li>
-    </ul>
-    <h1>Practicing JavaScript with Logic Building</h1>
-    <ul>
-        <li><a href="oddEven.html">Odd or Even Number</a></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <h1>Best Practices</h1>
+    <h1 align="center">MoonStack's Full-Stack Development Journey</h1>
+    <section id="aboutMe">
+        <h2>About Me</h2>
+        <p>...</p>
+        <p>What I plan to do with this site?</p>
+    </section>
+    <section id="learning">
+        <h2>Learned so far:</h2>
+        <ul>
+            <li>Currently learning HTML from GeeksForGeeks & CodeHelp/Apna College Courses</li>
+            <li>Setting up the environment</li>
+            <li>Git & GitHub</li>
+            <li>About HTML 
+                <ul>
+                    <li>!DOCTYPE html</li>
+                    <li>head - metadata/SEO/title</li>
+                    <li>body - all elements that you want to show in the webpage</li>
+                    <li>Lists: Ordered and Unordered + Nested Lists</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Best Practices</h2>
         <ul>
             <li>Read thru documentation: <a target="_blank" href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> or <a target="_blank" href = "https://www.w3schools.com/">W3Schools</a></li>
             <li>Practice what you learned</li>
         </ul>
-
+    </section>
+    <hr>
+    <h1>Practice Pages</h1>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Practice Pages</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="oddEven.html">Odd or Even Number Version 1</a></td>
+            <td>10.09.2025</td>
+            <td>10.09.2025</td>
+            <td>Did as part of Logic Building Exercise</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="oddEven2.html">Odd or Even Number Version 2</a></td>
+            <td>10.09.2025; 2230</td>
+            <td>10.09.2025; 2311</td>
+            <td>Used ChatGPT to enhance the style, same logic though</td>
+        </tr>
+    </table>
     </body>
 </html>
