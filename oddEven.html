@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+    <style>
+        body{
+            padding: 25px;
+        }
+        .title{
+            color:#5c6ac4;
+        }
+    </style>
+    <script>
+        function checkOddOrEven(){
+            var input = document.getElementById("num").value;
+            var rem = input % 2;
+            var result = "";
+            if(rem%2==0){
+                    result = input + ' is an <span style="color: pink;">even</span><br>';
+                }
+                else{
+                    result = input + ' is an <span style="color: violet;">odd</span><br>';
+                }
+            document.getElementById("output1").innerHTML = result;
+        }
+        function checkOddOrEven2(){
+            var input = document.getElementById("num2").value;
+            var result = "";
+
+            for (var i=1;i<=input;i++){
+                if(i%2==0){
+                    result += i + ' is an <span style="color: pink;">even</span><br>';
+                }
+                else{
+                    result += i + ' is an <span style="color: violet;">odd</span><br>';
+                }
+            }
+            document.getElementById("output2").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Odd or Even Checker</h1>
+    <p>Input Number: </p>
+    <input type="number" id="num">
+    <button onclick="checkOddOrEven()">Check</button>
+    <div id="output1"></div>
+
+    <h1>List of Odd and Even from Input</h1>
+    <p>Input Number: </p>
+    <input type="number" id="num2">
+    <button onclick="checkOddOrEven2()">Check</button>
+    <div id="output2"></div>
+</body>
+</html>
