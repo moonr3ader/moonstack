@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonStack | Web Dev Journey</title>
+  <link rel="stylesheet" href="../css/indexGuide.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav>
+    <h2>MoonStack Learning Launge🚀</h2>
+    <a href="#aboutMe">About Me</a>
+    <a href="#journey">Journey So Far</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>My Web Development Journey</h1>
+
+    <section id="aboutMe">
+      <h2>About Me</h2>
+      <p>Hi 👋 I’m MoonStack, an aspiring Full-Stack Developer documenting my journey from scratch to pro!</p>
+      <p>This website will serve as my learning log + portfolio showcase.</p>
+    </section>
+
+    <section id="journey">
+      <h2>Journey So Far</h2>
+      <ul>
+        <li>Currently learning <strong>HTML</strong> basics from GeeksForGeeks & Apna College.</li>
+        <li>Explored <strong>Git & GitHub</strong>: installation, configuration, and repos.</li>
+        <li>Practiced HTML:
+          <ul>
+            <li>Lists (Ordered, Unordered, Nested)</li>
+            <li>Tables with CSS</li>
+            <li>Forms (Basic + Advanced)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Project Form -->
+      <form id="projectForm">
+        <input type="text" id="projectName" placeholder="Project Name" required>
+        <input type="url" id="projectLink" placeholder="Project Link (https://... or local path)" required>
+        <input type="date" id="startDate" required>
+        <input type="date" id="endDate" required>
+        <input type="text" id="remarks" placeholder="Remarks" required>
+        <button type="submit">Add Project</button>
+      </form>
+
+      <!-- Project List -->
+      <table id="projectTable">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Project</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Remarks</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="projectList"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="../script/indexGuide.js"></script>
+</body>
+</html>
