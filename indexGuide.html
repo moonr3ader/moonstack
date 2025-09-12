@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonStack | Web Dev Journey</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    /* Sidebar */
+    nav {
+      width: 220px;
+      background: #1f2937;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    nav h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #374151;
+      padding-bottom: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #cbd5e1;
+      margin: 10px 0;
+      padding: 8px 12px;
+      display: block;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #374151;
+      color: white;
+    }
+
+    /* Main Content */
+    main {
+      margin-left: 240px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1, h2 {
+      color: #1f2937;
+    }
+
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: square;
+    }
+
+    /* Project Section */
+    #projects {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    #projects h2 {
+      margin-bottom: 15px;
+    }
+
+    #projectForm {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    #projectForm input {
+      padding: 8px;
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    #projectForm button {
+      padding: 8px 15px;
+      background: #2563eb;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #projectForm button:hover {
+      background: #1d4ed8;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-list li {
+      background: #f3f4f6;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .project-list a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .project-list button {
+      background: #ef4444;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .project-list button:hover {
+      background: #dc2626;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav>
+    <h2>MoonStack 🚀</h2>
+    <a href="#aboutMe">About Me</a>
+    <a href="#journey">Journey So Far</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>My Web Development Journey</h1>
+
+    <section id="aboutMe">
+      <h2>About Me</h2>
+      <p>Hi 👋 I’m MoonStack, an aspiring Full-Stack Developer documenting my journey from scratch to pro!</p>
+      <p>This website will serve as my learning log + portfolio showcase.</p>
+    </section>
+
+    <section id="journey">
+      <h2>Journey So Far</h2>
+      <ul>
+        <li>Currently learning <strong>HTML</strong> basics from GeeksForGeeks & Apna College.</li>
+        <li>Explored <strong>Git & GitHub</strong>: installation, configuration, and repos.</li>
+        <li>Practiced HTML:
+          <ul>
+            <li>Lists (Ordered, Unordered, Nested)</li>
+            <li>Tables with CSS</li>
+            <li>Forms (Basic + Advanced)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <form id="projectForm">
+        <input type="text" id="projectName" placeholder="Project Name" required>
+        <input type="url" id="projectLink" placeholder="Project Link (https://...)" required>
+        <button type="submit">Add Project</button>
+      </form>
+      <ul class="project-list" id="projectList">
+        <!-- Projects will be added dynamically -->
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById("projectForm");
+    const projectList = document.getElementById("projectList");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("projectName").value;
+      const link = document.getElementById("projectLink").value;
+
+      const li = document.createElement("li");
+      li.innerHTML = \`
+        <span><a href="\${link}" target="_blank">\${name}</a></span>
+        <button onclick="this.parentElement.remove()">Remove</button>
+      \`;
+
+      projectList.appendChild(li);
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
