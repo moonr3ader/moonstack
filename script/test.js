@@ -30,13 +30,23 @@ student["fullName"] = "Rahul Sharma";
 //printing a certain value from object
 console.log(student["fullName"]);
 
-//Practice Question
-const Product = {
+//Practice Question 1
+const product = {
     name: "Parker Jotter Standard CT Ball Pen (Black)",
-    rating: "4 Stars",
-    promo: "Deal of the Day",
+    rating: 4,
     price: 270.00,
     offer: 5 + "%",
 };
+//Practice Question 2
+const profile = {
+    username: "Shradha Khapra",
+    post: 195,
+    followers: 569+"k",
+    following: 4,
+    bio: "Entrepreneur",
+};
 
-console.log(Product);
+console.log(product);
+console.log(profile);
+//checking individual data type
+console.log(typeof profile["post"]);
