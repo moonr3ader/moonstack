@@ -29,3 +29,14 @@ console.log(student);
 student["fullName"] = "Rahul Sharma";
 //printing a certain value from object
 console.log(student["fullName"]);
+
+//Practice Question
+const Product = {
+    name: "Parker Jotter Standard CT Ball Pen (Black)",
+    rating: "4 Stars",
+    promo: "Deal of the Day",
+    price: 270.00,
+    offer: 5 + "%",
+};
+
+console.log(Product);
