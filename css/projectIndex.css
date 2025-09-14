@@ -1,0 +1,107 @@
+/* 
+Best Practices:
+Use classes for styling whenever possible. Classes promote reusability and make your CSS more modular and maintainable.
+Reserve IDs for truly unique elements or for JavaScript hooks when you need to target a specific element precisely.
+Avoid using IDs for general styling that might need to be applied to other elements in the future. If you find yourself needing to apply the same styles to multiple elements that were initially given IDs, it's a strong indication that classes would have been more appropriate.
+Prioritize semantic HTML. While div is a generic container, consider using more semantic HTML5 elements (like header, nav, main, section, article, aside, footer) in conjunction with classes to structure your content meaningfully. 
+*/
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background: #444;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Project Sections */
+.project {
+  display: flex;              /* Flexbox is simpler here */
+  align-items: flex-start;    /* Align at the top */
+  gap: 20px;                  /* Space between details & result */
+  padding: 20px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.details {
+  flex: 1;  /* Take 1 portion */
+}
+
+.result {
+  flex: 2;  /* Take 2 portions */
+}
+
+.result iframe {
+  width: 100%;
+  height: 300px;   /* Increased height for better preview */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.details h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.details a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.details a:hover {
+  background: #555;
+}
+
+/* Project Preview */
+.result iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
