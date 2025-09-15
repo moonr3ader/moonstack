@@ -50,3 +50,8 @@ console.log(product);
 console.log(profile);
 //checking individual data type
 console.log(typeof profile["post"]);
+
+let a = 33;
+//ternary operator
+console.log(a > 40? "true" : "false");
+a >= 18? console.log("adult") : console.log("not adult");
