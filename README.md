@@ -15,6 +15,7 @@ It includes projects, exercises, and experiments with modern technologies across
 - [Basic HTML Survey Form](lesson/surveyform.html)
 - [Basic HTML Portfolio Page](lesson/project1Portfolio.html)
 - [MoonStack Landing Page](lesson/indexGuide.html)
+- [Basic HTML Personal Blog](lesson/personalBlog.html)
 
 
 ## Tech Stack
