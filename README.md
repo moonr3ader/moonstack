@@ -14,7 +14,7 @@ It includes projects, exercises, and experiments with modern technologies across
 - [Advanced HTML Form](lesson/advanceFormPractice.html)
 - [Basic HTML Survey Form](lesson/surveyform.html)
 - [Basic HTML Portfolio Page](lesson/project1Portfolio.html)
-- [MoonStack Landing Page](lesson/indexGuide.html)
+- [MoonStack Sample Landing Page](lesson/sampleLandingPage.html)
 - [Basic HTML Personal Blog](lesson/personalBlog.html)
 
 

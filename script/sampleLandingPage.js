@@ -5,7 +5,7 @@ const projectList = document.getElementById("projectList");
 const defaultProjects = [
   {
     name: "Odd or Even Number Version 1",
-    link: "oddEven.html",   // ✅ no "lesson/"
+    link: "oddEven.html",
     start: "2025-09-10",
     end: "2025-09-10",
     remarks: "Did as part of Logic Building Exercise"
@@ -59,8 +59,11 @@ function loadProjects() {
   projectList.innerHTML = "";
 
   projects.forEach((proj, index) => {
+    
+    // ✅ Auto-fix links if they still have "lesson/" prefix
+    let fixedLink = proj.link.replace(/^lesson\//, "");
+    
     const row = document.createElement("tr");
-
     row.innerHTML = `
       <td>${index + 1}</td>
       <td><a href="${proj.link}" target="_blank">${proj.name}</a></td>
