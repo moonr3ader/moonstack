@@ -18,6 +18,7 @@ APPROACH #1:-
 ->  Using Library Methods - O(n) Time and O(1) Space: Most of the languages have a relevant max() type in-built function to find the maximum element, such as  std::max_element in C++. We can use this function to directly find the maximum element.
 */
 
+
 // CODE:-
 function largest1(arr){
     let max = arr[0]; //make the 1st element as largest
