@@ -7,9 +7,24 @@ How does this help in DSA?
 
 */
 
-function isEven(n){
+//Using the naive approach
+function isEven1(n){
+    let rem = n%2;
+    if(rem === 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+//Using the expected approach
+function isEven2(n){
     return ((n & 1) === 0);
 }
 
+
 let n = prompt("Enter a number: ");
-alert(isEven(n));
+console.log(isEven1(n));
+console.log(isEven2(n));
