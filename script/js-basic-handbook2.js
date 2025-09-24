@@ -6,8 +6,9 @@
 
 /* 
 ✅ VARIABLES & DATA TYPES ------------------------------------------------
- let, const, var (use let/const mostly).
- Data types: number, string, boolean, null, undefined, object, array.
+ - let, const, var (use let/const mostly).
+ - Data types: number, string, boolean, null, undefined, object, array.
+ - to check the data type of a variable: typeof fullName
 --------------------------------------------------------------------------*/
 
 let age = 21;                       //number (int/float/double, all included)
@@ -26,6 +27,8 @@ var c = 7;                          //can redeclared n updated //Global-scope va
 console.log(c);                     // 7
 var c = 0;                          //no error will show
 console.log(c);                     // 0
+
+console.log(typeof age);
 
 
 /* ✅ OPERATORS ----------------------------------------------------------
@@ -137,11 +140,15 @@ numArr.push(4); // [1, 2, 3, 4]
 let word = "hello";
 console.log(word.toUpperCase());      // "HELLO"
 
-/* ✅ OBJECTS (key-value, looping)----------------------------------------
+/* ✅ OBJECTS (key-value, looping)------------------------------------------------
 - Key-value pairs
 - Access with dot . and bracket []
 - Loop with for...in or Object.keys()
---------------------------------------------------------------------------*/
+- declaring object and its value, key : value
+- type student in browser console and can see the details stored here
+- how come in obj though declared in const can re-assign values?
+   - const variables cannot change value, but const object's keys you can change
+----------------------------------------------------------------------------------*/
 let person2 = {
     age:30,
     name: "Alice",
