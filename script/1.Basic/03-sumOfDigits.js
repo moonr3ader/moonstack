@@ -1,5 +1,21 @@
 /*
+Sum of Digits of a Number
+Given a number n, find the sum of its digits.
+Examples : 
+    Input: n = 687
+    Output: 21
+    Explanation: The sum of its digits are: 6 + 8 + 7 = 21
+Examples : 
+    Input: n = 12
+    Output: 3
+    Explanation: The sum of its digits are: 1 + 2 = 3
+*/
 
+/*
+[Approach 3] String Conversion
+- Convert the number to a string and iterate through each character (digit). 
+- For each character, subtract the ASCII value of '0' to get the actual digit, then add it to the sum.
+Note: This method is especially useful when the number is too large to fit in standard integer types.
 */
 
 
