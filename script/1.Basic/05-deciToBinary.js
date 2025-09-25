@@ -83,7 +83,7 @@ function decToBinary1(n){
 
 console.log(`GfG Approach 1: ${decToBinary1(n)}`);
 
-// Approach 1: Using Head Recursion - O(log₂(n)) Time and O(log₂(n)) Space
+// Approach 2: Using Head Recursion - O(log₂(n)) Time and O(log₂(n)) Space
 /*
 The idea is same as the previous approach, but we will use recursion to generate the binary equivalent number.
 */
