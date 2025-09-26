@@ -1,39 +1,38 @@
 // PATTERN QUESTIONS
 
-/*
-Print these patterns using loops:
-1.  *****
-    *****
-    *****
-    *****
-    *****
-*/
+// TIPS FROM STRIVER
+// 1. 
+// 2. 
+// 3. 
+// 4. 
+function tempES(n){
+       // Using ES6 Repeat and Template Literals: ------------------------------------------
+       // Javascript program for printing square of stars in console
+       const rowOfSquare = '* '.repeat(n);
 
-// Function for printing square pattern
-function printSquare(n) {
-    const row = "*  ".repeat(n);
-    // For loop
-    for (let i = 0; i < size; i++) {
-        console.log(row);
-    }
+       // Using template literal
+       // \n is used for next line
+       const square = `${rowOfSquare}\n`.repeat(n);
+       // Printing square
+       console.log(square);
 }
-let size = 5;
-// Calling function printSquare
-printSquare(size);
 
-// Using ES6 Repeat and Template Literals: ------------------------------------------
-// Javascript program for
-// printing square of stars
-// in console
-const rowOfSquare = '* '.repeat(size);
+function print1(n) {
+  for (let i = 0; i < n; i++) { // Outer loop for rows
+    let row = "";
+    for (let j = 0; j < n; j++) { // Inner loop for columns
+      row += "* "; // Add a star and a space for spacing
+    }
+    console.log(row); // Print the complete row
+  }
+}
 
-// Using template literal
-// \n is used for next line
+// TEST CASES
+let t = 5;
+// for(let i=0; i < t;i++){
+print1(t);
+// }
 
-const square = `${rowOfSquare}\n`.repeat(size);
-
-// Printing square
-console.log(square);
 
 /*
 2.  *

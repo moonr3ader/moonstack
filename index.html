@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table, thead, tbody, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0.5rem;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <p>Design Inspo:</p>
@@ -12,6 +20,71 @@
         <li><a href="https://www.w3schools.com/howto/howto_website_create_portfolio.asp">W3Schools</a></li>
         <li><a href="https://brittanychiang.com">Brittany Chiang: Front End Engineer</a></li>
     </ul>
+
+    <table>
+        <thead>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12524</td>
+                <td>Bill</td>
+                <td rowspan="2">Male</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>561121</td>
+                <td>James</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>15623</td>
+                <td>Sarah</td>
+                <td rowspan="2">Female</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>1884</td>
+                <td>Megan</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">Total Students</td>
+            <td>4</td>
+        </tfoot>
+    </table>
+
+    <br/>
     
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </body>
 </html>
