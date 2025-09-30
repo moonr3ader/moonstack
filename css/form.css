@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px; /*Add some margin around the form*/
+}
+
+form{
+    max-width: 600px; /* limits the form width */
+    margin: 20px auto; /* centers the form horizontally */
+    padding: 20px;
+    border: 1px solid grey; /* adding border */
+    border-radius: 5px; /* rounds the corners of the form container */
+    background-color: #f9f9f9;
+}
+
+label{
+    
+    margin-bottom: 5px; /* adds space below lables */
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="button"]{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover{
+    background-color: #0056b3;
+}

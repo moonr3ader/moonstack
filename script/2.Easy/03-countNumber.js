@@ -19,7 +19,17 @@ function countNum2(n) {
     return Math.floor(Math.log10(n)) + 1;
 }
 
+function countNum3(n){
+    return Math.floor(Math.log10(n) +1);
+}
 
-let n = 154284;
-console.log(countNum1(n)); 
-console.log(countNum2(n)); 
+function countNum4(n){
+    let str = n.toString();
+
+    return str.length;
+}
+
+let testcases = [1, 23, 353, 1343];
+for(let val of testcases){
+    console.log(`Checking if all functions give the same output: ${countNum1(val)}, ${countNum2(val)}, ${countNum3(val)}, ${countNum4(val)}`); 
+}

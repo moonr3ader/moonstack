@@ -50,6 +50,23 @@ if (x > y) {
   console.log("y is bigger");
 }
 
+let dayOfWeek = "Wednesday";
+switch (dayOfWeek) {
+  case "Monday":
+    console.log("Start of the work week!");
+    break;
+  case "Wednesday":
+    console.log("Hump day!");
+    break;
+  case "Friday":
+    console.log("Almost the weekend!");
+    break;
+  default:
+    console.log("Just another day.");
+}
+// Output: Hump day!
+
+
 // ✅ LOOPS (for, while, for...of)-----------------------------------------
 // for loop → classic counter loop
 let arr = [1, 2, 3];

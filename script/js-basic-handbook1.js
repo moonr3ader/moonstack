@@ -43,6 +43,22 @@ if (score >= 90) {
   console.log("Grade: C");
 }
 
+let dayOfWeek = "Wednesday";
+switch (dayOfWeek) {
+  case "Monday":
+    console.log("Start of the work week!");
+    break;
+  case "Wednesday":
+    console.log("Hump day!");
+    break;
+  case "Friday":
+    console.log("Almost the weekend!");
+    break;
+  default:
+    console.log("Just another day.");
+}
+// Output: Hump day!
+
 // Ternary operator
 let pass = (score >= 50) ? "Pass" : "Fail";
 console.log(pass);
