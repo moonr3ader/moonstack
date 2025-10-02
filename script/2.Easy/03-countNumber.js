@@ -25,7 +25,6 @@ function countNum3(n){
 
 function countNum4(n){
     let str = n.toString();
-
     return str.length;
 }
 

@@ -7,11 +7,13 @@ function reverseNum1(n){
     return revN;
 }
 
-
 // USING RECURSION
 function reverseNum2(n){
-    // code here
+    //code here
+
 }
 
-let n = 7899;
-console.log(reverseNum1(n));
+let n = [151, 132, 555, 141, 12];
+for(let val of n){
+    console.log(`The reverse of ${val} is ${reverseNum1(val)}`);
+}
