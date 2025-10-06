@@ -11,7 +11,26 @@ function secondLarge1(arr){
     }
     return -1;
 }
+// two pass search - better approach
+function secondLarge2(arr){
+    let n = arr.length;
 
+    let largest = -1, second = -1;
+    for(let i = 0; i < n; i++){
+        if(arr[i] > largest){
+            largest = arr[i];
+        }
+    }
+    for (let i = 0; i < n; i++){
+        if(arr[i] > second && arr[i] !== largest){
+            second = arr[i];
+        }
+    }
+    return second;
+}
+
+
+// one pass search - optimal/expected approach
 function secondLarge3(arr){
     const n = arr.length;
     let largest = -1, second = -1;
@@ -31,4 +50,5 @@ function secondLarge3(arr){
 
 const arr = [12, 35, 1, 10, 34, 1];
 console.log(secondLarge1(arr));
+console.log(secondLarge2(arr));
 console.log(secondLarge3(arr));
