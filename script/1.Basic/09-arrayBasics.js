@@ -1,13 +1,11 @@
-function calAverage(){
-    const marks = [85, 97, 44, 37, 76, 60];
+function calAverage(marks){
     let avg = 0, sum = 0;
 
     for(let val of marks){
         sum += marks[val];
     }
-
     avg = sum/marks.length;
-    console.log(avg);
+    return avg;
 }
 function updatePrice(arr){
     let temp = 0;
@@ -27,7 +25,8 @@ function updatePrice(arr){
     return arr; 
 }
 
-calAverage();
+const marks = [85, 97, 44, 37, 76, 60];
+console.log(calAverage(marks));
 console.log("-------------------------");
 
 const price = [250, 645, 300, 900, 50];
