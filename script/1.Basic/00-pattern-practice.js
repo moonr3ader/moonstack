@@ -128,7 +128,7 @@ function print5(n){
 }
 
 function print6(n){
-    /* pattern print5 will print
+    /* pattern print6 will print
 
     1 2 3 4 5
     1 2 3 4
@@ -155,15 +155,19 @@ function print7(n){
       * * * *
      * * * * *
     */
-    for(let i = 0;i < n;i++){
-        let row="";
-        //for space
-        //for star
-        //for space
-        for(let j = 1;j <= n-i+1; j++){
-            row+=j;
+    for(let i=0;i<=n;i++){
+        // space
+        let str = "";
+
+        for(let j = i; j < n; j++){
+            str += "  ";
         }
-        console.log(row);
+        // stars
+        for(let j=1;j<=(2*i+1);j++){
+            str += "* ";
+        }
+
+        console.log(str);
     }
 }
 
