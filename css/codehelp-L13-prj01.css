@@ -1,0 +1,12 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#para3{
+    background-color: blueviolet;
+}
+
+/* group selector example */
+p, article{
+    width: 500px;
+}

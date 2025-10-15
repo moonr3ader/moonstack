@@ -171,9 +171,13 @@ function print7(n){
     }
 }
 
+function print8(n){
+    
+}
+
 // PRINTING FROM SINGLE TEST
 let t = 5;
-print7(t);
+print1(t);
 
 
 // // ONLINE COMPILER'S BACKEND WILL LOOK MORE LIKE THIS
