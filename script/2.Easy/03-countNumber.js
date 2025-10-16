@@ -28,6 +28,8 @@ function countNum4(n){
     return str.length;
 }
 
+// CHECKING FUNCTIONS USING TEST CASES
+
 let testcases = [1, 23, 353, 1343];
 for(let val of testcases){
     console.log(`Checking if all functions give the same output: ${countNum1(val)}, ${countNum2(val)}, ${countNum3(val)}, ${countNum4(val)}`); 

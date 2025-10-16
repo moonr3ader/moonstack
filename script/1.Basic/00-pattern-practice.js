@@ -127,6 +127,23 @@ function print5(n){
     }
 }
 
+function print5_v2(n){
+    /*
+    pattern print5_v2 will print
+    * * * * *
+    * * * *
+    * * *
+    * *
+    */
+    for(let i=n;i>=0;i--){
+        let row ="";
+        for(let j=i;j>=0;j--){
+            row+="* ";
+        }
+        console.log(row);
+    }
+}
+
 function print6(n){
     /* pattern print6 will print
 
@@ -137,15 +154,31 @@ function print6(n){
     1
 
     */
-    for(let i = 1;i <= n;i++){
+    for(let i = 0;i < n;i++){
         let row="";
-        for(let j = 1;j <= n-i+1; j++){
+        for(let j = 0;j < n-i; j++){
+            row+=j+1;
+        }
+        console.log(row);
+    }
+}
+function print6_v2(n){
+    /*
+    pattern print5_v2 will print
+    5 4 3 2 1
+    4 3 2 1
+    3 2 1
+    2 1
+    1
+    */
+    for(let i=n;i>0;i--){
+        let row ="";
+        for(let j=i;j>0;j--){
             row+=j;
         }
         console.log(row);
     }
 }
-
 function print7(n){
     /* pattern print5 will print
 
@@ -177,7 +210,7 @@ function print8(n){
 
 // PRINTING FROM SINGLE TEST
 let t = 5;
-print1(t);
+print6_v2(t);
 
 
 // // ONLINE COMPILER'S BACKEND WILL LOOK MORE LIKE THIS
