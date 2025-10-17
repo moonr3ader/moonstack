@@ -1,0 +1,20 @@
+h2{
+    background-color: blanchedalmond;
+    /* shorthand notation */
+    border: dashed 2px;
+    border-radius: 5px;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* pseudo-class selector */
+p:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+/* pseudo-element selector */
+p::first-letter{
+    font-size: 50px;
+}
+
+/* H/W: Why width property is not working for span tag */
