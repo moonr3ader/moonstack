@@ -179,38 +179,110 @@ function print6_v2(n){
         console.log(row);
     }
 }
-function print7(n){
-    /* pattern print5 will print
+function print7(n) {
+  /* pattern print7 will print
+            *
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+  */
 
-         *
-        * *
-       * * *
-      * * * *
-     * * * * *
-    */
-    for(let i=0;i<=n;i++){
-        // space
-        let str = "";
+  for (let i = 0; i < n; i++) {
+    let row = "";
 
-        for(let j = i; j < n; j++){
-            str += "  ";
-        }
-        // stars
-        for(let j=1;j<=(2*i+1);j++){
-            str += "* ";
-        }
-
-        console.log(str);
+    // spaces
+    for (let j = i; j < n - 1; j++) {
+      row += "  ";
     }
+
+    // stars
+    for (let j = 0; j < (2 * i + 1); j++) {
+      row += "* ";
+    }
+
+    console.log(row);
+  }
 }
 
 function print8(n){
+    /* pattern print8 will print
+
+    * * * * * * *
+      * * * * *
+        * * *
+          *
+    */
+   for(let i = 0; i < n; i++){
+    let row = "";
+
+    // spaces
+    for(let j = 0; j < i; j++){
+        row += "  ";
+    }
+
+    // stars
+    for(let j = 0; j < 2 * (n-i) - 1; j++){
+        row += "* ";
+    }
+    console.log(row);
+   }
+}
+
+function print9(n){
+    /* 
+    print9 should print this
+            * 
+          * * * 
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+    * * * * * * * * *
+      * * * * * * *
+        * * * * *
+          * * *
+            *
+    */
+
+    return print7(n), print8(n);
+}
+
+function print10(n){
+    /* 
     
+    print10 should print this
+    * 
+    * * 
+    * * *
+    * * * *
+    * * * * *
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
+    
+    */
+
+    for(let i = 0; i < 2 * n - 1; i++){
+        let row = "";
+        let cnd = i; // the condition till when the loop will run
+
+        if( i > n) cnd = 2 * n - i;
+        for(let j = 0; j < cnd; j++){
+            row += "* ";
+        }
+        console.log(row);
+    }
+}
+
+function print10_v2(n){
+    return print2(n), print5(n);
 }
 
 // PRINTING FROM SINGLE TEST
 let t = 5;
-print6_v2(t);
+print10(t);
 
 
 // // ONLINE COMPILER'S BACKEND WILL LOOK MORE LIKE THIS
