@@ -1,20 +1,63 @@
-h2{
-    background-color: blanchedalmond;
+/* === HEADER SECTION === */
+header{
+    background-color: rgba(90, 36, 120, 0.454);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
     /* shorthand notation */
     border: dashed 2px;
-    border-radius: 5px;
+    
 }
-p{
+/* === ABOUT SECTION === */
+.aboutPara{
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 /* pseudo-class selector */
-p:hover{
+.aboutPara:hover{
     background-color: grey;
     cursor: pointer;
 }
 /* pseudo-element selector */
-p::first-letter{
+.aboutPara::first-letter{
     font-size: 50px;
 }
 
-/* H/W: Why width property is not working for span tag */
+/* === TO CENTER AN IMAGE === */
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* === RESULT SECTION === */
+#result{
+    box-shadow: 0 4px 8px 0 rgba(90, 36, 120, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title{
+    color: grey;
+    font-size: 18px;
+}
+button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+button:hover{
+    opacity: 0.10s;
+}
+/* H/W: Why width property is not working for span tag: because span are inline elements by default */
