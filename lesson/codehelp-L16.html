@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHelp Ep16 Practice</title>
+    <link rel="stylesheet" href="../css/codehelp-L16.css">
+</head>
+<body>
+    <!-- 
+    1. Number Guessing Game: User guesses a number; show “too high” or “too low” until correct. (Conditionals, Loops)
+    -->
+    <form id="guessNumber">
+        <label for="number">Guess the Number: </label>
+        <input type="number" id="number" name="number">
+        <input type="submit" value="Submit">
+        <input type="submit" id="refresh" value="Refresh">
+        <br/><br/>
+        <span id="message"></span>
+    </form>
+
+    <script>
+        const guessNum = 55;
+
+        function validateForm(){
+            
+            const number = document.getElementById("number");
+            const guessMessage = document.getElementById("message");
+            const refresh = document.getElementById('refresh');
+            const num = parseInt(number.value.trim(), 10);
+
+            // FOR THE REFRESH BUTTON
+            refresh.addEventListener('click', function(){
+                window.location.reload();
+            });
+
+            if(number.value.trim() === ""){
+                guessMessage.style.color = 'red';
+                guessMessage.textContent = "Field Cannot Be Empty!";
+            } else if(isNaN(num)){
+                guessMessage.style.color = '#FF474C';
+                guessMessage.textContent = "Please enter a valid number!";
+            } else if(num < guessNum){
+                guessMessage.style.color = '#FF474C';
+                guessMessage.textContent = "Too Low!";
+            } else if(num > guessNum){
+                guessMessage.style.color = '#FF474C';
+                guessMessage.textContent = "Too High!";
+            } else {
+                guessMessage.style.color = 'green';
+                guessMessage.textContent = "You got it right!";
+            }
+            number.value = "";
+        }
+
+        document.getElementById('guessNumber').addEventListener('submit', function(event){
+            event.preventDefault();
+            validateForm();
+        });
+    </script>
+</body>
+</html>
