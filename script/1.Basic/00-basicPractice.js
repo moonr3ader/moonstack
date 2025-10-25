@@ -1,5 +1,5 @@
 // PRINT ALL ELEMENT IN AN ARRAY
-arr = [1,2,3,4];
+let arr = [1,2,3,4];
 console.log(arr);
 
 // FIND SUM OF ALL ELEMENTS

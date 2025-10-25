@@ -52,3 +52,49 @@ const arr = [12, 35, 1, 10, 34, 1];
 console.log(secondLarge1(arr));
 console.log(secondLarge2(arr));
 console.log(secondLarge3(arr));
+
+
+// -----------------------------------------------------------------------------------------------
+
+// FIND THE SECOND LARGEST ELEMENT
+
+// finding without sorting
+function findSecondLargest1(arr){
+    if (arr.length === 0) return -1;
+
+    let max = arr[0]; //assuming the first element is the largest
+    let max2 = arr[0];
+
+    for(let i=0;i<arr.length; i++){
+        // if the consequetive elements are larger than arr[0], then set max to that value
+        if(arr[i] > max){
+            second = max;
+            max = arr[i];
+        } else if(arr[i] > max2 && arr[i] < max){
+            max2 = arr[i];
+        }
+    }
+
+    return max2 === -Infinity ? -1 : max2;
+}
+
+// finding after sorting
+function findSecondLargest2(arr){
+    // if (arr.length === 0) return -1;
+    
+    if(arr.length < 2) return -1;
+    let temp = arr.sort((a, b) => a - b);
+    // return temp[temp.length - 2];
+    for(let i = temp.length - 2; i >= 0; i--){
+        if(temp[i] !== temp[temp.length - 1]){
+            return temp[i];
+        }
+    }
+
+    return -1; // if all elements are equal
+
+}
+
+const arr = [5,2,9,1]; // → 5
+console.log(`The 2nd Largest in ${arr} is ${findSecondLargest1(arr)}`);
+console.log(`The 2nd Largest in ${arr} is ${findSecondLargest2(arr)}`);

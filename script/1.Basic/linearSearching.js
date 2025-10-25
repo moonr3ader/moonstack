@@ -1,12 +1,11 @@
 /*
-What is linear searching: Searching something from left to right in a data structure 
-( like arrays, objects, and strings).
+What is linear searching: 
+Searching something from left to right in a data structure (like arrays, objects, and strings).
 */
 
-// BASIC LINEAR SEARCH
+// ------------------------------- BASIC ARRAY LINEAR SEARCH ------------------------------- 
 // search the array to see if val exist or not
 function searchArrays(arr, val){
-    
     if (arr.length === 0) return -1;
 
     for(let i=0;i<arr.length;i++){
@@ -39,7 +38,7 @@ if (idx !== -1) {
   console.log(`"${val}" not found in the array.`);
 }
 
-// linear searching in string
+// ------------------------------- BASIC STRING LINEAR SEARCH ------------------------------- 
 function searchStr(str, ch){
     
     if(str.length === 0) return -1;
