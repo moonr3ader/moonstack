@@ -31,9 +31,54 @@ function searchInsertK1(arr, k){
     }
     return arr.length;
 }
+
+// USE BINARY SEARCHING
 function searchInsertK2(arr, k){
-    // code here
+    
+    let size = arr.length;
+    let start = 0;
+    let end = size-1;
+    let mid = Math.floor((start + end) / 2);
+
+    return mid;
 }
 
-let arr = [2, 6, 7, 10, 14], k = 8;
+let arr = [2, 6, 7, 10, 14], k = 10;
+let arr2 = [2, 6, 10, 14];
 console.log(searchInsertK1(arr, k));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// sorting an array using toSorted() method
+    // let sortedArr = [...arr].sort((a, b) => a - b);
+    // let sortedArr = arr.toSorted((a, b) => a - b);
+// console.log(sortedArr);
