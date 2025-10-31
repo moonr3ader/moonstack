@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 15px;
+            display: flex;
+            column-gap: 5px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .items{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-style: double;
+            background-color: bisque;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    -------------------- WEBPAGE IDEA: CSS Layout Lab --------------------
+     A single page with multiple sections where each demonstrates one CSS layout concept
+     (e.g., one section for float, one for sticky, one for fixed)
+     -->
+     
+    <div class="container">
+        <div class="items" id="box1">Box 1</div>
+        <div class="items" id="box2">Box 2</div>
+        <div class="items" id="box3">Box 3</div>
+        <div class="items" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
