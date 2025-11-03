@@ -1,0 +1,129 @@
+/*
+Format manually Shift + Alt + F
+Format on type "editor.formatOnType": true
+  - It formats the line when you press enter.
+  but, it leaves it unformatted when you mouse-click another line or press up/down arrow.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    line-height: 1.4;
+    background-color: #fafafa;
+}
+
+.note {
+    background-color: black;
+    color: white;
+    margin: 15px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 6px;
+    box-shadow: 5px 5px teal;
+}
+
+.wiki {
+    margin: 15px;
+    border: 1px solid black;
+    height: 350px;
+    overflow: auto;
+    text-align: justify;
+}
+
+.wiki img {
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+}
+
+.flexpractice {
+    margin: 15px;
+    display: flex;
+    border: 1px solid black;
+    gap: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flexpractice .content {
+    margin: 5px;
+    border: 1px solid brown;
+    height: 150px;
+    width: 150px;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+#cont-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.media {
+    display: flex;
+    margin: 15px;
+    background-color: #ebebeb;
+    border: 1px solid black;
+}
+
+.media .media1 {
+    width: 50%;
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.media .media2 {
+    width: 50%;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.media .media1 .media-box {
+    height: 50px;
+    justify-content: space-around;
+}
+
+#mbox1 {
+    background-color: #8d2323;
+}
+
+#mbox2 {
+    background-color: #ffcc00;
+}
+
+#mbox3 {
+    background-color: aquamarine;
+}
+
+.textshadow {
+    margin: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* if screen is below 400px */
+@media (min-width: 400px) and (max-width: 600px) {
+    .media {
+        background-color: #5c5a5a;
+        flex-direction: column;
+    }
+
+    #mbox1 {
+        background-color: #a78787;
+    }
+
+    #mbox2 {
+        background-color: #9f9b9b;
+    }
+}

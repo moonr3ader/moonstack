@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 22: Name Card</title>
+    <style>
+        .container{
+            background-color: rgb(134, 100, 179);
+            height: 650px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(117, 27, 181);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            width: 450px;
+            height: 225px;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .content{
+            margin: 5px;
+            padding: 5px;
+            color: white;
+        }
+        .content p{
+            color: rgb(204, 201, 201);
+        }
+        .box:hover {
+            box-shadow: 
+                10px 15px rgb(223, 221, 221),
+                -1em -0.5em 0em rgb(49, 49, 49);
+        }
+        .box img{
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="avatar">
+            <div class="content">
+                <h2>Jane Doe</h2>
+                <p>Position</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, et!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

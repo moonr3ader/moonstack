@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBox Practice</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            margin: 15px;
-            display: flex;
-            column-gap: 5px;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .items{
-            height: 300px;
-            width: 300px;
-            border: 1px solid black;
-            border-style: double;
-            background-color: bisque;
-            align-content: center;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <!--
-    -------------------- WEBPAGE IDEA: CSS Layout Lab --------------------
-     A single page with multiple sections where each demonstrates one CSS layout concept
-     (e.g., one section for float, one for sticky, one for fixed)
-     -->
-     
-    <div class="container">
-        <div class="items" id="box1">Box 1</div>
-        <div class="items" id="box2">Box 2</div>
-        <div class="items" id="box3">Box 3</div>
-        <div class="items" id="box4">Box 4</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDev Practice: Ep19 - 22</title>
+    <link rel="stylesheet" href="../css/codehelp-L20.css" />
+  </head>
+  <body>
+    <p class="note">
+      <i>Practice from Ep19: CSS Float, Clear, and Overflow</i>
+    </p>
+    <div class="wiki">
+      <h2>Sample Wikipedia</h2>
+      <hr />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png"
+        alt="wikipedia logo"
+      />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
+        repellendus atque repudiandae quam veritatis, facere itaque, repellat,
+        debitis recusandae molestias explicabo quibusdam illo cupiditate omnis
+        facilis ad sunt unde eum sint quo sit inventore. Quidem, iusto tenetur
+        molestias doloribus quos amet esse quas ipsa atque voluptas ratione,
+        mollitia, vitae tempore sequi nisi! Repellat dolorem explicabo nemo
+        deserunt officiis et necessitatibus itaque impedit totam perferendis
+        temporibus quisquam esse odit dicta laborum, iste error, ipsa quibusdam
+        quos quo! Quas facilis culpa quaerat cupiditate repellat excepturi
+        praesentium architecto debitis neque, ratione aut voluptatem fuga minus
+        unde beatae! Modi, eius ullam? Libero eveniet iure quam optio fuga
+        veniam minima maiores numquam, atque rem ducimus qui nesciunt vel non
+        nisi debitis, est error aut labore! Eveniet aliquam exercitationem
+        quibusdam totam repellat dignissimos inventore ea voluptatem ducimus
+        natus. Optio alias cumque esse quam quis quod, porro praesentium aperiam
+        unde a nemo dicta quisquam doloremque quasi cupiditate iure delectus
+        eaque corporis aspernatur explicabo maxime? Tempore at alias fuga
+        impedit, deserunt dolor molestias veritatis enim ut! Aperiam dignissimos
+        explicabo animi mollitia ipsam iusto odio veritatis, quia suscipit
+        quibusdam sapiente eligendi natus esse soluta consectetur quod illo.
+        Illo maxime, rem, velit dicta pariatur ea placeat amet magnam dolorum
+        cumque porro est quibusdam asperiores repellendus voluptatibus beatae
+        harum? Vel voluptatem quidem quasi consectetur illum maxime quisquam
+        laudantium in iusto itaque cum aut provident ullam obcaecati assumenda
+        nulla eos fugit quia doloribus, distinctio quaerat. Deleniti
+        reprehenderit illo rerum eum? Alias error nisi explicabo neque
+        temporibus minus molestias, unde beatae ipsam eum rerum, cum incidunt
+        laboriosam nam eos vitae dicta odit, aut sit doloribus velit quidem?
+        Placeat delectus, aperiam tenetur cumque dolorem, excepturi dignissimos,
+        unde expedita iusto dolores veritatis asperiores id illum officiis
+        adipisci! Id beatae vitae quidem autem aspernatur cum placeat officia,
+        voluptates et quia accusamus doloremque laudantium? Facere atque
+        exercitationem velit accusantium architecto asperiores aut repudiandae
+        eius sit optio iure at eligendi harum obcaecati nihil rem odit numquam
+        accusamus soluta cum molestiae voluptatem, nesciunt laudantium magnam.
+        Consequuntur, alias nihil, dicta doloribus cupiditate debitis culpa
+        veniam perferendis ex eum placeat omnis quae corporis corrupti saepe sit
+        hic odit. Unde placeat nisi porro sit reprehenderit ab neque accusamus
+        expedita possimus, ducimus odit adipisci quasi? Nulla, omnis adipisci
+        placeat qui aliquam itaque et ut necessitatibus, hic aut assumenda velit
+        modi! Saepe nam ducimus vero provident at dicta quasi! Voluptatem illum
+        quod sint ducimus itaque obcaecati sapiente qui dignissimos pariatur
+        nemo, explicabo expedita quam soluta ut quis distinctio laudantium atque
+        autem, culpa provident totam. Blanditiis magnam ipsam, veritatis rem,
+        cupiditate nobis eos tenetur sed nisi ea dolor ut commodi, voluptatibus
+        ad. Veritatis, cum tempore! Non, maiores. Praesentium, eius modi
+        dolorem, sint eos reiciendis deserunt molestiae nihil iusto ipsam in
+        optio soluta corrupti voluptas dolor odit perspiciatis vitae mollitia
+        voluptatibus alias tempore dolorum officiis perferendis?
+      </p>
     </div>
-</body>
+
+    <p class="note"><i>Practice from Ep20: CSS FlexBox</i></p>
+    <div class="flexpractice">
+      <div class="content" id="cont-1">Box 1</div>
+      <div class="content" id="cont-2">Box 2</div>
+      <div class="content" id="cont-3">Box 3</div>
+      <div class="content" id="cont-4">Box 4</div>
+    </div>
+
+    <p class="note">
+      <i
+        >Practice from Ep21: CSS Media Queries and Custom Variables Explained</i
+      >
+    </p>
+    <div class="media">
+      <div class="media1">
+        <div class="media-box" id="mbox1">Box 1</div>
+        <div class="media-box" id="mbox2">Box 2</div>
+      </div>
+      <div class="media2" id="mbox3">Box 3</div>
+    </div>
+
+    <p class="note">
+      <i>Practice from Ep22: CSS Shadow Effects - Box Shadow && Text Shadow</i>
+    </p>
+    <div class="textshadow">
+      <p>
+        check out the topic tag
+      </p>
+    </div>
+  </body>
 </html>
