@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+        }
+        .container{
+            margin: 10px;
+            height: 500px;
+            width: 500px;
+            border: 5px solid black;
+            background-color: #351497;
+            overflow: hidden;
+        }
+        .box{
+            margin: 10px;
+            padding: 10px;
+            height: 50px;
+            width: 200px;
+            color: white;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            background-color: #6a54ac;
+            text-align: center;
+            transition: width 2s;
+            position: relative;
+            /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+            animation: 5s linear 0s infinite alternate both running slide-in;
+        }
+        @keyframes slide-in {
+            0%   {left:0px; top:0px;}
+            25%  {left:200px; top:0px;}
+            50%  {left:200px; top:200px;}
+            75%  {left:0px; top:200px;}
+            100% {left:0px; top:0px;}
+        }
+        .box:hover{
+            width: 300px;
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Bring the mouse to me to see the transition</p>
+        </div>
+    </div>
+</body>
+</html>
