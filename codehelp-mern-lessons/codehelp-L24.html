@@ -4,42 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition</title>
+    <title>Transition Effects</title>
     <style>
-        .box{
-            height: 400px;
-            width: 400px;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            overflow: hidden;
+        }
+        h1, p{
+            text-align: center;
+        }
+        #title{
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 100%;
+            color: black;
+        }
+        .container1, .container2{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: fit-content;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        .box0, .box1, .box2{
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
             background-color: beige;
             border: 2px solid black;
-
-            /* transition-property: all;
-            transition-duration: 4s;
-            /* transition-delay: 1s; 
-            transition-timing-function: ease-out;
-            
+        }
+        .box0{
+            /* shorthand: property name | duration | easing-function | delay */
+            transition: all 1s ease-in 0s;
+            /* 
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 5s;
             */
-
-
-            /* shorthand notation */
-            /* transition: all 2s ease-in 5s;
-             */
-
+        }
+        .box1{
+            height: fit-content;
+            width: fit-content;
+            /* shorthand: apply to 2 properties */
             transition: width 2s, height 5s;
         }
+        .box2{
+            transition: width 2s, height 5s;
+        }
+        .box0:hover, .box1:hover, .box2:hover{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(34, 34, 173);
+        }
 
-
-        .box:hover{
-            width: 1800px;
-            height: 900px;
-            background-color: blue;
+        /* SQUARE TO CIRCLE */
+        .container2{
+            color: white;
+        }
+        .circle0, .circle1{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .circle0{
+            background-color: rgb(110, 20, 20);
+            transition: border-radius 0.5s ease-in-out;
+        }
+        .circle0:hover{
+            border-radius: 50%;
+        }
+        .circle1{
+            background-color: rgb(184, 86, 86);
+            transition: border-radius 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+        }
+        .circle1:hover{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
         }
     </style>
 </head>
 <body>
-
-    <div class="box">
-
-    </div>
+    <h1>CodeHelp Lecture 24: CSS Transition</h1>
+    <hr>
+    <br><br>
     
+    <div class="container1">
+        <h2 id="title">Boxes Practice</h2>
+        <div class="box0">
+            <p>Box 0</p>
+        </div>
+        <div class="box1">
+            <p>Box 1</p>
+            <p>this when height n width is set to fit-content</p>
+        </div>
+        <div class="box2">
+            <p>Box 2</p>
+            <p>this is with fixed height n width = 100px
+                lorem
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="container2">
+        <h2 id="title">toCircle Practice</h2>
+        <div class="circle0">
+            <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Circle 0</p>
+        </div>
+        <div class="circle1">
+            <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Circle 1</p>
+        </div>
+    </div>
 </body>
 </html>
