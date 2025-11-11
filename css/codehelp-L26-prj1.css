@@ -1,0 +1,81 @@
+/* BASIC STYLING */
+
+*{
+    /* best practices */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    background-color: rgb(241, 219, 219);
+}
+h2{
+    text-align: center;
+    padding: 15px;
+}
+
+/* NAVIGATION PRACTICE 1 */
+.nav-prc-1{
+    width: 100vw;
+    background-color: rgb(58, 33, 88);
+    position: relative;
+    min-height: 90px;
+    color: white;
+}
+#nav-prc-1-1{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+#navList1{
+    list-style: none;
+    overflow: hidden;
+}
+#navList1 li{
+    float: right;
+}
+#navList1 li:first-child{
+    float: left;
+}
+#navList1 li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+/* NAVIGATION PRACTICE 2 */
+nav{
+    width: 100%;
+    overflow: none;
+}
+.nav-prc-2{
+    width: 100vw;
+    background-color: rgb(3, 76, 76);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#navList2{
+    width: 100%;
+    padding: 15px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navList2 a{
+    text-decoration: none;
+    color: white;
+}
+#navList2-items{
+    display: flex;
+    gap: 20px;
+}

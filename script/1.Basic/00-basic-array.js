@@ -72,3 +72,24 @@ console.log(cnt); // 3
 // MERGE TWO ARRAYS
 let newArray = arr.concat(arr6);
 console.log(newArray); // → [1,2,3,4,1,1,6,4,8,1,3];
+
+
+// CHECK IF ARRAY IS SORTED
+function checkSorted(arr){
+    if (arr.length === 0) return -1;
+    
+    let temp = [...arr].sort((a, b) => a - b);
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] !== temp[i]){
+            return false;
+        }
+    }
+    return true;
+}
+arr = [3, 2, 1, 4];
+let sortedArr = [1, 2, 3, 4];
+if(checkSorted(arr) === true){
+    console.log(`The array ${arr} is sorted.`)
+} else {
+    console.log(`The array ${arr} is NOT sorted.`)
+}
