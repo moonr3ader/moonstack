@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======== GENERAL STYLING ======== */
+body{
+    background-color: #FBD3E9;
+}
+header, footer{
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* ======== MAIN & CONTAINER STYLING ======== */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    background: #1c1a1a;
+}
+
+/* ======== CARD 1 STYLING ======== */
+.card1{
+    width: 360px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.card1 img{
+    height: 57%;
+    border-radius: 20px;
+}
+.card1 h2, .card2 h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.card1 p{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/* ======== CARD 2 STYLING ======== */
+.card2{
+    width: 360px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.card2 img{
+    width: 360px;
+    height: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card2 p{
+    padding: 15px;
+    text-align: justify;
+}
+.card2 .payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+
+    width: 90%;
+    padding: 15px;
+    background-color: #7272FE;
+    border-radius: 10px;
+}
+.card2 .payment img{
+    height: 32px;
+    width: 32px;
+}
+.card2 button{
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    background: #00003E;
+    color: white;
+}
+#aCancel{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
