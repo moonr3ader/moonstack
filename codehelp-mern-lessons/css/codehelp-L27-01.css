@@ -107,3 +107,63 @@ main{
     color: black;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+
+/* ======== CARD 3 STYLING ======== */
+.card3{
+    width: 700px;
+    height: 260px;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+
+    position: relative;
+    transition: all 0.6s linear 0s;
+}
+.card3 .details{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.card3 .details .sub-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card3 .details p{
+    font-size: 12px;
+}
+.card3 .details h2{
+    font-size: 1.6rem;
+}
+.card3 .details .sub-details p{
+    font-size: 9px;
+}
+.card3 img{
+    width: 50%;
+    height: 100%;
+}
+.card3 .overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(36, 34, 34, 0.713);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    transition: 1s linear;
+}
+
+.card3:hover .overlay{
+    opacity: 1;
+    width: 100%;
+}
