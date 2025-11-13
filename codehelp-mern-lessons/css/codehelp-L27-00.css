@@ -118,9 +118,7 @@ main{
     flex-direction: row;
     align-items: center;
     gap: 25px;
-
     position: relative;
-    transition: all 0.6s linear 0s;
 }
 .card3 .details{
     width: 50%;
@@ -155,12 +153,12 @@ main{
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(36, 34, 34, 0.713);
+    background-color: rgba(58, 55, 55, 0.713);
     overflow: hidden;
     width: 0;
     height: 100%;
     opacity: 0;
-    transition: 1s linear;
+    transition: all 2.5s linear 0s;
 }
 
 .card3:hover .overlay{

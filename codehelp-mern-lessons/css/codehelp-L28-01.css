@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* CONTAINER AND IN CONTAINER STYLES */
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(24, 18, 18);
+    border: 5px solid rgb(217,202,202);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,200px);
+    gap: 0.5rem;
+    padding: 4rem;
+    /* justify-items: stretch; */
+    /* align-items: center; */
+}
+.item{
+    /* stretch won't work if width is assigned */
+    /* height: 50px;
+    width: 100px; */
+    background-color: rgb(9, 53, 38);
+    border: 5px solid rgb(217,202,202);
+    /* justify-self (how an item justifies itself in its cell) */
+    /* justify-self: center; */
+    
+    /* this one can strech from start to end */
+    /* align-self: stretch; */
+    /* place-self: stretch; */
+
+    /* vertically and horizontally center */
+    place-self: stretch;
+}
