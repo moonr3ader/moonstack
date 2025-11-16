@@ -15,12 +15,19 @@ function drawSnake(){
     // how it will look
     snake.forEach((segment) => {
         const snakeElement = createGameElement('div' , 'snake');
+        setPosition(snakeElement, segment);
     });
 }
 
-
 // create a snake or food cube/div
 function createGameElement(tag, className){
-    // 
+    // this will create a div in this case
     const element = document.createElement(tag);
+    element.className = className;
+    return element;
+}
+
+// define/set the position of the snake and its food
+function setPosition(snakeElement, segment){
+    element.style.gridColumn = position.x;
 }
