@@ -1,3 +1,7 @@
+// INITIALIZING AN ARRAY
+let a = new Array(10,20,30);
+let b = [10, 20, 30];
+
 // PRINT ALL ELEMENT IN AN ARRAY
 let arr = [1,2,3,4];
 console.log(arr);

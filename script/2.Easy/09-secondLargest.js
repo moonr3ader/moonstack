@@ -5,7 +5,11 @@ function secondLarge1(arr){
     arr.sort((a,b) => a - b);
 
     for (let i = n - 2; i >= 0; i--){
+        // this is checking bween the 2nd last (n-2) and last element (n-1)
         if(arr[i] !== arr[n-1]){
+            // console.log(arr);
+            // console.log(`Index ${i} : Value ${arr[i]}`);
+            // console.log(`Last in the array is: ${arr[n-1]}`);
             return arr[i];
         }
     }
@@ -57,7 +61,6 @@ console.log(secondLarge3(arr));
 // -----------------------------------------------------------------------------------------------
 
 // FIND THE SECOND LARGEST ELEMENT
-
 // finding without sorting
 function findSecondLargest1(arr){
     if (arr.length === 0) return -1;
@@ -83,7 +86,8 @@ function findSecondLargest2(arr){
     // if (arr.length === 0) return -1;
     
     if(arr.length < 2) return -1;
-    let temp = arr.sort((a, b) => a - b);
+    // let temp = arr.sort((a, b) => a - b); // this methods will actually change even the original one
+    const temp = [...arr].sort((a,b) => a -b);
     // return temp[temp.length - 2];
     for(let i = temp.length - 2; i >= 0; i--){
         if(temp[i] !== temp[temp.length - 1]){
@@ -95,6 +99,6 @@ function findSecondLargest2(arr){
 
 }
 
-const arr = [5,2,9,1]; // → 5
-console.log(`The 2nd Largest in ${arr} is ${findSecondLargest1(arr)}`);
-console.log(`The 2nd Largest in ${arr} is ${findSecondLargest2(arr)}`);
+const arr2 = [5,2,9,1]; // → 5
+console.log(`The 2nd Largest in ${arr2} is ${findSecondLargest1(arr2)}`);
+console.log(`The 2nd Largest in ${arr2} is ${findSecondLargest2(arr2)}`);
