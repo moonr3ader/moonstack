@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHelp Lecture 31</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding: 4rem;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(26, 26, 26);
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* this will help save code line for media queries for diff screen sizes
+            grid-template-columns: repeat(auto-fit, minmax(min, max)); */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+            justify-content: center;
+        }
+        .item{
+            border: 1px solid black;
+            padding: 1rem;
+            background-color: rgb(3, 88, 137);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
