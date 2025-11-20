@@ -13,11 +13,14 @@
         body{
             height: 100%;
             width: 100%;
+            display: flex;
         }
-        .container{
-            height: 100%;
+        .container1{
+            height: auto;
             width: 100%;
             padding: 4rem;
+            border: 1px solid black;
+            box-sizing: border-box;
             display: grid;
             gap: 1rem;
             background-color: rgb(26, 26, 26);
@@ -33,10 +36,51 @@
             background-color: rgb(3, 88, 137);
             color: white;
         }
+        .container2{
+            height: auto;
+            width: 100%;
+            padding: 4rem;
+            box-sizing: border-box;
+
+            border: 1px solid black;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(26, 26, 26);
+            grid-template-areas: 
+            "header header header"
+            "sidebar content1 content1"
+            "sidebar content2 content3"
+            "footer footer footer"
+            ;
+        }
+        .item2{
+            border: 1px solid black;
+            padding: 1rem;
+            background-color: rgb(3, 88, 137);
+            color: white;
+        }
+        #header{
+            grid-area: header;
+        }
+        #content1{
+            grid-area: content1;
+        }
+        #content2{
+            grid-area: content2;
+        }
+        #content3{
+            grid-area: content3;
+        }
+        #sidebar{
+            grid-area: sidebar;
+        }
+        #footer{
+            grid-area: footer;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
@@ -47,6 +91,14 @@
         <div class="item">H</div>
         <div class="item">I</div>
         <div class="item">J</div>
+    </div>
+    <div class="container2">
+        <div class="item2" id="header">header</div>
+        <div class="item2" id="sidebar">sidebar</div>
+        <div class="item2" id="content1">content1</div>
+        <div class="item2" id="content2">content2</div>
+        <div class="item2" id="content3">content3</div>
+        <div class="item2" id="footer">footer</div>
     </div>
 </body>
 </html>
