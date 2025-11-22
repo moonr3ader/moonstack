@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
 
-/* :root {
+:root {
     --primary-color: #6366F1;
     --accent-color: #3f83f8;
     --text-color: #333333;
@@ -9,7 +9,7 @@
     --light-gray: #f0f0f0;
     --gray: #808080;
     --dark-gray: #555;
-} */
+}
 
 * {
     margin: 0;
@@ -99,9 +99,21 @@ body{
     align-items: center;
     left: -150px;
     transition: 2s;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
 }
 .hero-section:active {
     left:0;
+}
+@keyframes slideFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .left-side{
     width: 45%;
