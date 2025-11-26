@@ -24,14 +24,13 @@ body{
 }
 
 /* == HEADER STYLING == */
-
 .header-content{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 .logo{
     display: flex;
@@ -101,8 +100,8 @@ body{
         display: block;
     }
 }
-/* == HERO SECTION == */
 
+/* == HERO SECTION == */
 .main-section{
     max-width: 1280px;
     margin: 0 auto;
