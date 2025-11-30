@@ -89,19 +89,8 @@ body{
     height: 1.5rem;
     width: 1.5rem;
 }
-@media screen  and (min-width: 768px){
-    .nav{
-        display: flex;
-    }
-    .contact-button{
-        display: block;
-    }
-}
-@media screen and (max-width:768px){
-    .menu-button{
-        display: block;
-    }
-}
+
+/* HERO SECTION STYLING */
 .hero-section{
     max-width: 1280px;
     margin: 0 auto;
@@ -182,5 +171,46 @@ body{
     100%{
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media screen  and (min-width: 768px){
+    .nav{
+        display: flex;
+    }
+    .contact-button{
+        display: block;
+    }
+    .hero-section{
+        flex-direction: row;
+    }
+    .left-content{
+        max-width: 50%;
+        text-align: left;
+    }
+    .left-title{
+        padding-left: 0;
+        font-size: 3.5rem;
+    }
+    .left-label{
+        font-size: 1rem;
+    }
+    .left-description{
+        font-size: 1rem;
+        color: var(--gray);
+        width: 78%;
+        text-align: justify;
+    }
+    .buttons-group{
+        justify-content: start;
+        padding-left: 0;
+    }
+    .image-container{
+        height: 67vh;
+    }
+}
+@media screen and (max-width:768px){
+    .menu-button{
+        display: block;
     }
 }
