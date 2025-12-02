@@ -1,8 +1,5 @@
 // ------ Easy Problems on Recursion in JS ------ 
-//  Print 1 to n without loop
-//  Print n to 1 without loop
 //  Mean of Array using Recursion
-//  Sum of natural numbers using recursion
 //  Decimal to binary number using recursion
 //  Sum of array elements using recursion
 
@@ -47,3 +44,17 @@ function findSum(n){
 let n = 6;
 console.log("");
 console.log(`findSum of ${n} is ${findSum(n)}`);
+
+
+// Factorial of number using recursion
+function factorial(n){
+    if(n === 0) return 1;
+
+    // let choti = factorial(n - 1);
+    // let badiProb  = n * choti;
+    // return badiProb;
+
+    return n * factorial(n - 1);
+}
+
+console.log(`factorial of ${n} is ${factorial(n)}`);
