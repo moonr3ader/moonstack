@@ -2,28 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation Layout</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-        }
-    </style>
+    <title>Interval Timer</title>
+    <link rel="stylesheet" href="css/timer.css">
 </head>
 <body>
-    <pre>
-        planning to create a timer app with that will consist of:
-            - simple crud for timer block
-            - save last timer set (cookies)
-            - set workouts
-    </pre>
-    <img src="https://cdn.dribbble.com/userupload/31811416/file/original-33a7649eac7c628d597670fea3f16b24.png?resize=1600x1200&vertical=center" alt="ui-sample" height="500">
+    <div class="timer-section">
+        <div class="timer-title">
+            <img src="" alt="settings-icon"/>
+            <p>Interval Timer</p>
+        </div>
+        <div class="timer-count">
+            <p id="timer-total">Total</p>
+            <p id="timer-counting">00:00</p>
+        </div>
+    </div>
+    <!-- <img src="https://cdn.dribbble.com/userupload/31811416/file/original-33a7649eac7c628d597670fea3f16b24.png?resize=1600x1200&vertical=center" alt="ui-sample" height="500"/> -->
 </body>
 </html>
