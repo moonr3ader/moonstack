@@ -29,3 +29,29 @@ body {
 #timer-total{
     font-size: 0.5rem;
 }
+.timer-list{
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(14, 19, 60);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.interval-name{
+    width: 70%;
+}
+.interval-name input{
+    width: 100%;
+}
+.interval-timer{
+    width: 30%;
+}
+.time-add-minus, .interval-name input{
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
