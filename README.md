@@ -24,7 +24,7 @@ It includes projects, exercises, and experiments with modern technologies across
 - MongoDB / SQL
 
 ## About Me
-Aspiring full-stack developer passionate about building web applications and learning continuously.
+Aspiring full-stack developer passionate about building web applications and learning continuously.<br><br>
 
 Currently on a journey in being consistent with my updates, and aiming for at least a 45-days streak.
  <!-- Connect with me on [LinkedIn](your-link) | [Portfolio Website](your-link) -->
