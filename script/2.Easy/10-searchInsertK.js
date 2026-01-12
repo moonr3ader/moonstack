@@ -84,35 +84,6 @@ if (result == -1)
 else
     console.log("Element is present at index " + result);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // sorting an array using toSorted() method
     // let sortedArr = [...arr].sort((a, b) => a - b);
     // let sortedArr = arr.toSorted((a, b) => a - b);
