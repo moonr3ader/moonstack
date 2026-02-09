@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="example1">This is the ori content using innerHTML</div>
+    <div id="example2">This is the ori text content using textContent</div>
+
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        // Function to change content
+        function changeContent(){
+            document.getElementById("example1").innerHTML = "<strong>This is changed using innerHTML!</strong>";
+
+            document.getElementById("example2").innerHTML = "This is changed using textContent!";
+        }
+    </script>
+</body>
+</html>
