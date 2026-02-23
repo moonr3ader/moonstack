@@ -15,3 +15,20 @@ function isBinary(s) {
 
 let s = "01010101010";
 console.log(isBinary(s));
+
+function isBinaryStringUsingSet(str) {
+    // Create a set from the characters of the string
+    const charSet = new Set(str);
+
+    // Check if the set contains only '0' and '1'
+    for (let char of charSet) {
+        if (char !== '0' && char !== '1') {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isBinaryStringUsingSet("101010")); // Output: true
+console.log(isBinaryStringUsingSet("10102"));  // Output: false
