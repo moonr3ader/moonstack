@@ -17,9 +17,5 @@
   "bugs": {
     "url": "https://github.com/moonr3ader/moonstack/issues"
   },
-  "homepage": "https://github.com/moonr3ader/moonstack#readme",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
-  }
+  "homepage": "https://github.com/moonr3ader/moonstack#readme"
 }
